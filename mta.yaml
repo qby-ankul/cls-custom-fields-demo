@@ -1,0 +1,32 @@
+---
+_schema-version: 3.3.0
+ID: cls
+version: 1.0.0
+description: "A simple CAP project."
+parameters:
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npx cds build --production
+modules:
+  - name: cls-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      buildpack: nodejs_buildpack
+      command: node ./node_modules/@sap/cds/bin/serve DemoService
+      readiness-health-check-type: http
+      readiness-health-check-http-endpoint: /odata/v4/demo/hello(name='world')
+      memory: 512M
+      disk-quota: 512M
+    build-parameters:
+      builder: npm
+    requires:
+      - name: cloud-logging
+
+resources:
+  - name: cloud-logging
+    type: org.cloudfoundry.existing-service

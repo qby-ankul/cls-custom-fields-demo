@@ -1,0 +1,31 @@
+{
+  "name": "cls",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "cds": {
+    "requires": {
+      "auth": "dummy"
+    },
+    "log": {
+      "cls_custom_fields": [
+        "bla"
+      ]
+    }
+  },
+  "dependencies": {
+    "@sap/cds": "^8",
+    "@sap/xssec": "^4.2.6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8"
+  },
+  "scripts": {
+    "deploy": "mbt build --mtar archive && cf deploy mta_archives/archive.mtar -f --retries 1"
+  }
+}

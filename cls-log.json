@@ -1,0 +1,88 @@
+{
+   "_index": "logs-cfsyslog-2024.11.07",
+   "_type": "_doc",
+   "_id": "rhjqBpMBEE11LBJEzUFB",
+   "_version": 1,
+   "_score": null,
+   "_ignored": [
+     "timestamp"
+   ],
+   "_source": {
+     "syslog_priority": "14",
+     "syslog_hostname": "cls-srv",
+     "cf_app_id": "6858b855-7d9f-43cc-8e6c-5dba4347cc7c",
+     "source_type": "APP/PROC/WEB",
+     "syslog_msgid": "-",
+     "level": "info",
+     "logger": "demo",
+     "correlation_id": "282d2a91-43e0-4ad5-4bbe-5c2a92285442",
+     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+     "accept_encoding": "gzip, deflate, br, zstd",
+     "accept_language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+     "b3": "282d2a9143e04ad54bbe5c2a92285442-4bbe5c2a92285442",
+     "priority": "u=0, i",
+     "sec_ch_ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+     "sec_ch_ua_mobile": "?0",
+     "sec_ch_ua_platform": "\"Windows\"",
+     "sec_fetch_dest": "document",
+     "sec_fetch_mode": "navigate",
+     "sec_fetch_site": "none",
+     "sec_fetch_user": "?1",
+     "upgrade_insecure_requests": "1",
+     "x_b3_spanid": "4bbe5c2a92285442",
+     "x_b3_traceid": "282d2a9143e04ad54bbe5c2a92285442",
+     "x_cf_applicationid": "6858b855-7d9f-43cc-8e6c-5dba4347cc7c",
+     "x_cf_instanceid": "d645b0ad-d57b-4003-7df8-50f5",
+     "x_cf_instanceindex": "0",
+     "x_forwarded_proto": "https",
+     "x_request_start": "1730987870357",
+     "x_scp_request_id": "cc9a8343-1653-410f-9cae-649d987de71c-672CC75E-49E6576",
+     "x_vcap_request_id": "282d2a91-43e0-4ad5-4bbe-5c2a92285442",
+     "request_id": "282d2a91-43e0-4ad5-4bbe-5c2a92285442",
+     "x_correlation_id": "282d2a91-43e0-4ad5-4bbe-5c2a92285442",
+     "timestamp": "2024-11-07T13:57:50.389Z",
+     "layer": "cds",
+     "component_type": "application",
+     "container_id": "10.0.137.41",
+     "component_id": "6858b855-7d9f-43cc-8e6c-5dba4347cc7c",
+     "component_name": "cls-srv",
+     "component_instance": 0,
+     "source_instance": 0,
+     "msg": "test { bla: 'hello' }",
+     "type": "log",
+     "app_id": "6858b855-7d9f-43cc-8e6c-5dba4347cc7c",
+     "app_name": "cls-srv",
+     "deployment": "cf_cells_1",
+     "index": "fc3ac61c-9430-4b8b-8734-c4790f998904",
+     "instance_id": "0",
+     "ip": "10.0.137.41",
+     "job": "diego-cell",
+     "origin": "rep",
+     "process_id": "6858b855-7d9f-43cc-8e6c-5dba4347cc7c",
+     "process_instance_id": "d645b0ad-d57b-4003-7df8-50f5",
+     "process_type": "web",
+     "source_id": "6858b855-7d9f-43cc-8e6c-5dba4347cc7c",
+     "@timestamp": "2024-11-07T13:57:50.390Z",
+     "__v1_type": "-",
+     "component": "-",
+     "trace_id": "282d2a9143e04ad54bbe5c2a92285442",
+     "span_id": "4bbe5c2a92285442",
+     "_cls_parse_ts": 1730987870566
+   },
+   "fields": {
+     "@timestamp": [
+       "2024-11-07T13:57:50.390Z"
+     ]
+   },
+   "highlight": {
+     "app_name": [
+       "@opensearch-dashboards-highlighted-field@cls@/opensearch-dashboards-highlighted-field@-@opensearch-dashboards-highlighted-field@srv@/opensearch-dashboards-highlighted-field@"
+     ],
+     "organization_name": [
+       "@opensearch-dashboards-highlighted-field@lib@/opensearch-dashboards-highlighted-field@-@opensearch-dashboards-highlighted-field@dev@/opensearch-dashboards-highlighted-field@"
+     ]
+   },
+   "sort": [
+     1730987870390
+   ]
+ }
